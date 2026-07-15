@@ -3,8 +3,9 @@
 
 <head>
 <link rel="icon" type="image/png" href="imagenes postres/logo recortado.png">
+
     <title>Pedidos - Corteza & Crema</title>
-</head>
+<style>.whatsapp,.instagram{position:fixed;right:20px;color:#fff;padding:14px;border-radius:50%;text-decoration:none;font-size:28px}.whatsapp{bottom:20px;background:#25D366}.instagram{bottom:90px;background:#E1306C}</style><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script><script>emailjs.init("rmzKqWWxh34Pn_Q3Z");</script></head>
 
 <body bgcolor="#FFF8F0">
 
@@ -15,7 +16,7 @@
 <tr>
 
 <td width="15%">
-<img src="imagenes postres/logo recortado.png" width="80" alt="Logo Corteza & Crema">
+<img src="imagenes postres/logo recortado.png" width="80">
 </td>
 
 <td align="center">
@@ -65,69 +66,7 @@ Cada rebanada, un momento inolvidable.
 
 <font face="Arial" size="5">
 
-<b>Nombre:</b>
-
-<br><br>
-
-<input type="text" size="50">
-
-<br><br>
-
-<b>Teléfono:</b>
-
-<br><br>
-
-<input type="text" size="50">
-
-<br><br>
-
-<b>Correo Electrónico:</b>
-
-<br><br>
-
-<input type="email" size="50">
-
-<br><br>
-
-<b>Selecciona tu producto:</b>
-
-<br><br>
-
-<select>
-
-<option>Pie de Limón</option>
-
-<option>Pie de Fresa</option>
-
-<option>Pie de Maracuyá</option>
-
-<option>Combo Degustación</option>
-
-</select>
-
-<br><br>
-
-<b>Cantidad:</b>
-
-<br><br>
-
-<input type="number" min="1" max="20">
-
-<br><br>
-
-<b>Comentarios:</b>
-
-<br><br>
-
-<textarea rows="5" cols="50"></textarea>
-
-<br><br>
-
-<input type="submit" value="Enviar Pedido">
-
-<input type="reset" value="Limpiar">
-
-</font>
+<form id="pedidoForm"><b>Nombre:</b><br><br><input id="nombre" type="text" size="50" required><br><br><b>Teléfono:</b><br><br><input id="telefono" type="text" size="50" required><br><br><b>Correo Electrónico:</b><br><br><input id="correo" type="email" size="50" required><br><br><b>Selecciona tu producto:</b><br><br><select id="producto"><option>Pie de Limón</option><option>Pie de Fresa</option><option>Pie de Maracuyá</option><option>Combo Degustación</option></select><br><br><b>Cantidad:</b><br><br><input id="cantidad" type="number" min="1" max="20"><br><br><b>Comentarios:</b><br><br><textarea id="comentarios" rows="5" cols="50"></textarea><br><br><button type="submit">Enviar Pedido</button> <button type="reset">Limpiar</button></form></font>
 
 </td>
 
@@ -175,6 +114,242 @@ Cada rebanada, un momento inolvidable.
 
 </center>
 
-</body>
+<a href="https://wa.me/50488890712?text=Hola,%20quiero%20hacer%20un%20pedido." class="whatsapp">💬</a><a href="https://instagram.com/cortezandcrema_" class="instagram">📷</a><script>pedidoForm.addEventListener("submit",e=>{e.preventDefault();emailjs.send("service_f694fgb","template_2s21hj3",{nombre:nombre.value,telefono:telefono.value,correo:correo.value,producto:producto.value,cantidad:cantidad.value,comentarios:comentarios.value}).then(()=>{alert("¡Pedido enviado correctamente!");pedidoForm.reset();}).catch(()=>alert("Error al enviar"));});</script></body>
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+<link rel="icon" type="image/png" href="imagenes postres/logo recortado.png">
+
+    <title>Pedidos - Corteza & Crema</title>
+<style>.whatsapp,.instagram{position:fixed;right:20px;color:#fff;padding:14px;border-radius:50%;text-decoration:none;font-size:28px}.whatsapp{bottom:20px;background:#25D366}.instagram{bottom:90px;background:#E1306C}</style><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script><script>emailjs.init("rmzKqWWxh34Pn_Q3Z");</script></head>
+
+<body bgcolor="#FFF8F0">
+
+<!-- Encabezado -->
+
+<table width="100%" bgcolor="#F8D7DA" cellpadding="15">
+
+<tr>
+
+<td width="15%">
+<img src="imagenes postres/logo recortado.png" width="80">
+</td>
+
+<td align="center">
+
+<font face="Georgia" size="7" color="#8B4513">
+<b>Corteza & Crema</b>
+</font>
+
+<br>
+
+<font face="Arial" size="4">
+Cada rebanada, un momento inolvidable.
+</font>
+
+</td>
+
+<td align="right">
+
+<a href="index.html">Inicio</a> |
+<a href="menu.html">Menú</a> |
+<a href="promocion.html">Promoción</a> |
+<a href="pedidos.html">Pedidos</a>
+
+</td>
+
+</tr>
+
+</table>
+
+<br><br>
+
+<center>
+
+<font face="Georgia" size="7" color="#8B4513">
+
+<b>REALIZA TU PEDIDO</b>
+
+</font>
+
+<br><br>
+
+<table border="2" cellpadding="20" bgcolor="#FFF0F5" width="60%">
+
+<tr>
+
+<td>
+
+<font face="Arial" size="5">
+
+<form id="pedidoForm"><b>Nombre:</b><br><br><input id="nombre" type="text" size="50" required><br><br><b>Teléfono:</b><br><br><input id="telefono" type="text" size="50" required><br><br><b>Correo Electrónico:</b><br><br><input id="correo" type="email" size="50" required><br><br><b>Selecciona tu producto:</b><br><br><select id="producto"><option>Pie de Limón</option><option>Pie de Fresa</option><option>Pie de Maracuyá</option><option>Combo Degustación</option></select><br><br><b>Cantidad:</b><br><br><input id="cantidad" type="number" min="1" max="20"><br><br><b>Comentarios:</b><br><br><textarea id="comentarios" rows="5" cols="50"></textarea><br><br><button type="submit">Enviar Pedido</button> <button type="reset">Limpiar</button></form></font>
+
+</td>
+
+</tr>
+
+</table>
+
+<br><br>
+
+<font face="Arial" size="5">
+
+📞 <b>Teléfono:</b> +504 8889-0712
+
+<br><br>
+
+💬 <b>WhatsApp:</b> +504 8889-0712
+
+<br><br>
+
+📍 <b>Ubicación:</b> Tegucigalpa, Honduras
+
+<br><br>
+
+🕒 <b>Horario:</b> Lunes a Sábado de 8:00 a.m. a 6:00 p.m.
+
+</font>
+
+<br><br>
+
+<a href="index.html">⬅ Volver al Inicio</a>
+
+</center>
+
+<br><br>
+
+<hr>
+
+<center>
+
+<font face="Georgia" size="4">
+
+© 2026 Corteza & Crema
+
+</font>
+
+</center>
+
+<a href="https://wa.me/50488890712?text=Hola,%20quiero%20hacer%20un%20pedido." class="whatsapp">💬</a><a href="https://instagram.com/cortezandcrema_" class="instagram">📷</a><script>pedidoForm.addEventListener("submit",e=>{e.preventDefault();emailjs.send("service_f694fgb","template_2s21hj3",{nombre:nombre.value,telefono:telefono.value,correo:correo.value,producto:producto.value,cantidad:cantidad.value,comentarios:comentarios.value}).then(()=>{alert("¡Pedido enviado correctamente!");pedidoForm.reset();}).catch(()=>alert("Error al enviar"));});</script></body>
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+<link rel="icon" type="image/png" href="imagenes postres/logo recortado.png">
+
+    <title>Pedidos - Corteza & Crema</title>
+<style>.whatsapp,.instagram{position:fixed;right:20px;color:#fff;padding:14px;border-radius:50%;text-decoration:none;font-size:28px}.whatsapp{bottom:20px;background:#25D366}.instagram{bottom:90px;background:#E1306C}</style><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script><script>emailjs.init("rmzKqWWxh34Pn_Q3Z");</script></head>
+
+<body bgcolor="#FFF8F0">
+
+<!-- Encabezado -->
+
+<table width="100%" bgcolor="#F8D7DA" cellpadding="15">
+
+<tr>
+
+<td width="15%">
+<img src="imagenes postres/logo recortado.png" width="80">
+</td>
+
+<td align="center">
+
+<font face="Georgia" size="7" color="#8B4513">
+<b>Corteza & Crema</b>
+</font>
+
+<br>
+
+<font face="Arial" size="4">
+Cada rebanada, un momento inolvidable.
+</font>
+
+</td>
+
+<td align="right">
+
+<a href="index.html">Inicio</a> |
+<a href="menu.html">Menú</a> |
+<a href="promocion.html">Promoción</a> |
+<a href="pedidos.html">Pedidos</a>
+
+</td>
+
+</tr>
+
+</table>
+
+<br><br>
+
+<center>
+
+<font face="Georgia" size="7" color="#8B4513">
+
+<b>REALIZA TU PEDIDO</b>
+
+</font>
+
+<br><br>
+
+<table border="2" cellpadding="20" bgcolor="#FFF0F5" width="60%">
+
+<tr>
+
+<td>
+
+<font face="Arial" size="5">
+
+<form id="pedidoForm"><b>Nombre:</b><br><br><input id="nombre" type="text" size="50" required><br><br><b>Teléfono:</b><br><br><input id="telefono" type="text" size="50" required><br><br><b>Correo Electrónico:</b><br><br><input id="correo" type="email" size="50" required><br><br><b>Selecciona tu producto:</b><br><br><select id="producto"><option>Pie de Limón</option><option>Pie de Fresa</option><option>Pie de Maracuyá</option><option>Combo Degustación</option></select><br><br><b>Cantidad:</b><br><br><input id="cantidad" type="number" min="1" max="20"><br><br><b>Comentarios:</b><br><br><textarea id="comentarios" rows="5" cols="50"></textarea><br><br><button type="submit">Enviar Pedido</button> <button type="reset">Limpiar</button></form></font>
+
+</td>
+
+</tr>
+
+</table>
+
+<br><br>
+
+<font face="Arial" size="5">
+
+📞 <b>Teléfono:</b> +504 8889-0712
+
+<br><br>
+
+💬 <b>WhatsApp:</b> +504 8889-0712
+
+<br><br>
+
+📍 <b>Ubicación:</b> Tegucigalpa, Honduras
+
+<br><br>
+
+🕒 <b>Horario:</b> Lunes a Sábado de 8:00 a.m. a 6:00 p.m.
+
+</font>
+
+<br><br>
+
+<a href="index.html">⬅ Volver al Inicio</a>
+
+</center>
+
+<br><br>
+
+<hr>
+
+<center>
+
+<font face="Georgia" size="4">
+
+© 2026 Corteza & Crema
+
+</font>
+
+</center>
+
+<a href="https://wa.me/50488890712?text=Hola,%20quiero%20hacer%20un%20pedido." class="whatsapp">💬</a><a href="https://instagram.com/cortezandcrema_" class="instagram">📷</a><script>pedidoForm.addEventListener("submit",e=>{e.preventDefault();emailjs.send("service_f694fgb","template_2s21hj3",{nombre:nombre.value,telefono:telefono.value,correo:correo.value,producto:producto.value,cantidad:cantidad.value,comentarios:comentarios.value}).then(()=>{alert("¡Pedido enviado correctamente!");pedidoForm.reset();}).catch(()=>alert("Error al enviar"));});</script></body>
 
 </html>
