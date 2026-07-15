@@ -1,82 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-<link rel="icon" type="image/png" href="imagenes postres/logo recortado.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Corteza & Crema</title>
+
+    <link rel="icon" href="imagenes/logo recortado.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
-<body bgcolor="#FFF8F0">
+<body>
 
-<!-- Encabezado -->
-<table width="100%" bgcolor="#F8D7DA" cellpadding="15">
-    <tr>
-        <td width="15%">
-           <img src="imagenes postres/logo recortado.png" alt="Logo" width="80">
-        </td>
+<!--==================== HEADER ====================-->
 
-        <td align="center">
-            <font face="Georgia" size="7" color="#8B4513">
-                <b>Corteza & Crema</b>
-            </font>
-            <br>
-            <font face="Arial" size="4">
-                Cada rebanada, un momento inolvidable.
-            </font>
-        </td>
+<header class="header">
 
-        <td align="right">
-            <a href="index.html">Inicio</a> |
-            <a href="menu.html">Menú</a> |
-            <a href="promocion.html">Promoción</a> |
-            <a href="pedidos.html">Pedidos</a>
-        </td>
-    </tr>
-</table>
+    <a href="#" class="logo">
 
-<br><br>
+        <img src="imagenes/logo recortado.png" alt="Logo recortado">
 
-<!-- Bienvenida -->
-<table width="100%">
-    <tr>
+        <span>Corteza & Crema</span>
 
-        <td align="center">
+    </a>
 
-            <font face="Georgia" size="7" color="#8B4513">
-                <b>Bienvenidos</b>
-            </font>
+    <nav class="navbar">
 
-            <br><br>
+        <a href="#inicio">Inicio</a>
 
-            <font face="Arial" size="5">
-                Disfruta nuestros deliciosos pies artesanales
-                elaborados con ingredientes frescos y de la mejor calidad.
-            </font>
+        <a href="#menu">Menú</a>
 
-            <br><br>
+        <a href="#promocion">Promoción</a>
 
-            <img src="imagenes postres/postre limon.png" width="220">
-            <img src="imagenes postres/postre fresa .png" width="220">
-            <img src="imagenes postres/postre maracuya.png" width="220">
-        </td>
+        <a href="#contacto">Contacto</a>
 
-    </tr>
-</table>
+    </nav>
 
-<br><br>
+</header>
 
-<hr color="#D4A373">
+<!--==================== HERO ====================-->
 
-<center>
+<section class="hero" id="inicio">
 
-<font face="Georgia" size="5" color="#8B4513">
+    <div class="hero-text">
 
-© 2026 Corteza & Crema
+        <h1>Corteza <span>& Crema</span></h1>
 
-</font>
+        <h3>Elaborado con esmero y dedicación</h3>
 
-</center>
+        <p>
+            Descubre nuestros deliciosos pies artesanales preparados con ingredientes frescos y mucho amor.
+        </p>
+
+        <a href="#menu" class="btn">
+
+            Ver Menú
+
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="imagenes/3postres.png" alt="Tres Postres">
+
+    </div>
+
+</section>
+
+<!--==================== MENÚ ====================-->
+
+<section class="menu" id="menu">
+
+    <div class="titulo">
+
+        <h2>Nuestro Menú</h2>
+
+        <p>Los sabores favoritos de nuestros clientes.</p>
+
+    </div>
+
+    <div class="contenedor">
+
+        <div class="card">
+
+            <img src="imagenes/postre limon.png" alt="Pie de Limón">
+
+            <h3>Pie de Limón</h3>
+
+            <p>
+
+                Delicioso pie artesanal con un toque fresco de limón.
+
+            </p>
+
+            <h4>L. 280 Completo</h4>
+
+            <span>Rebanada L. 80</span>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagenes/postre fresa.png" alt="Pie de Fresa">
+
+            <h3>Pie de Fresa</h3>
+
+            <p>
+
+                Preparado con fresas frescas y una suave crema.
+
+            </p>
+
+            <h4>L. 320 Completo</h4>
+
+            <span>Rebanada L. 90</span>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagenes/postre maracuya.png" alt="Pie de Maracuyá">
+
+            <h3>Pie de Maracuyá</h3>
+
+            <p>
+
+                El equilibrio perfecto entre dulce y ácido.
+
+            </p>
+
+            <h4>L. 300 Completo</h4>
+
+            <span>Rebanada L. 85</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================== PROMOCIÓN ====================-->
+
+<section class="promocion" id="promocion">
+
+    <div class="promo">
+
+        <h2>Combo Degustación</h2>
+
+        <p>
+
+            Disfruta nuestros tres deliciosos sabores en un solo combo.
+
+        </p>
+
+        <ul>
+
+            <li>🍋 Pie de Limón</li>
+
+            <li>🍓 Pie de Fresa</li>
+
+            <li>🥭 Pie de Maracuyá</li>
+
+        </ul>
+
+        <h3>L. 220</h3>
+
+    </div>
+
+</section>
+
+<!--==================== POR QUÉ ELEGIRNOS ====================-->
+
+<section class="elegirnos">
+
+    <div class="titulo">
+
+        <h2>¿Por qué elegirnos?</h2>
+
+    </div>
+
+    <div class="contenedor">
+
+        <div class="info">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Hecho con Amor</h3>
+
+        </div>
+
+        <div class="info">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <h3>Ingredientes Frescos</h3>
+
+        </div>
+
+        <div class="info">
+
+            <i class="fa-solid fa-star"></i>
+
+            <h3>Calidad Premium</h3>
+
+        </div>
+
+        <div class="info">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <h3>Atención Personalizada</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================== CONTACTO ====================-->
+
+<section class="contacto" id="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <p>
+
+        Estamos listos para atenderte.
+
+    </p>
+
+    <div class="contacto-botones">
+
+        <a href="https://wa.me/50488890712" target="_blank">
+
+            <i class="fab fa-whatsapp"></i>
+
+            WhatsApp
+
+        </a>
+
+        <a href="https://instagram.com/cortezandcrema_" target="_blank">
+
+            <i class="fab fa-instagram"></i>
+
+            @cortezandcrema_
+
+        </a>
+
+    </div>
+
+</section>
+
+<!--==================== BOTONES FLOTANTES ====================-->
+
+<a href="https://wa.me/50488890712" class="whatsapp" target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a href="https://instagram.com/cortezandcrema_" class="instagram" target="_blank">
+
+    <i class="fab fa-instagram"></i>
+
+</a>
+
+<!--==================== FOOTER ====================-->
+
+<footer>
+
+    <img src="imagenes/logo recortado.png" alt="Logo">
+
+    <h3>Corteza & Crema</h3>
+
+    <p>
+
+        Cada rebanada, un momento inolvidable.
+
+    </p>
+
+    <small>
+
+        © 2026 Corteza & Crema. Todos los derechos reservados.
+
+    </small>
+
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
 
